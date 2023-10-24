@@ -1,1 +1,1 @@
-curl -X PUT -H "Content-Type: application/json" -d '{"book_id": 1, "new_update_copies": 50}' http://localhost:8000/
+curl -X PUT -H "Content-Type: application/json" -d '{"book_id": 1, "new_update_copies": 400}' http://localhost:10000/
