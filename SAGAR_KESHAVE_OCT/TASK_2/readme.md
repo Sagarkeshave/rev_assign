@@ -29,5 +29,23 @@ pip install -r requirements.txt
 ```
 
 
+## Usage
+
+1. Run the FastAPI application using Uvicorn:
+
+```
+uvicorn main:app --reload
+```
+
+
+2. Open your web browser or a tool like [curl](https://curl.se/) to make a PUT request to update the available copies of a book:
+
+```
+curl -X PUT -H "Content-Type: application/json" -d '{"book_id": 1, "new_update_copies": 400}' http://localhost:10000/
+```
+
+**Note**
+  - Make sure you have a database in supabase with books table with columns ["id", "available_copies"] and replace env variables with proper credentials
+
 
 
